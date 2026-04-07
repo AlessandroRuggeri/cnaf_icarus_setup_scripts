@@ -2,7 +2,7 @@
 
 export ICARUS_OPT=/opt/exp_software/icarus/users/alrugger
 export ICARUS_LOCAL=/storage/gpfs_data/icarus/local/users/alrugger
-export SCRIPTS_DIR=/storage/gpfs_data/icarus/local/users/alrugger/cnaf_icarus_setup_scripts
+export SCRIPTS_DIR=/storage/gpfs_data/icarus/local/users/alrugger/cnaf_icarus_scripts
 
 
 ICODE_VS="v10_20_03"

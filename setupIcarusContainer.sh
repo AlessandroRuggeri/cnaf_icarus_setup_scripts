@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ICARUS_HOME=/storage/gpfs_data/icarus/local/users/alrugger
-ICARUS_SCRIPTS_DIR=${ICARUS_HOME}/cnaf_icarus_setup_scripts
+ICARUS_SCRIPTS_DIR=${ICARUS_HOME}/cnaf_icarus_scripts
 
 /cvmfs/oasis.opensciencegrid.org/mis/apptainer/current/bin/apptainer exec \
   --pid --ipc -B /etc/grid-security,/etc/resolv.conf,/cvmfs,/storage,/data,/opt,/tmp \
