@@ -1,0 +1,19 @@
+# Unix submit description file
+# sleep.sub -- simple sleep job
+
++SingularityImage = "/cvmfs/singularity.opensciencegrid.org/fermilab/fnal-dev-sl7:latest"
+Requirements = HasSingularity
+
+executable              = submit_splines.sh
+
+# set the tune name
+spline_name = mDNu_100_mZ_30_Umu_2e-10
+
+arguments               = $(spline_name)
+# environment             = "USER=aruggeridune"
+log                     = $(ClusterId).$(Process).$(Item).log
+output                  = $(ClusterId).$(Process).$(Item).out
+error                   = $(ClusterId).$(Process).$(Item).err
+should_transfer_files   = Yes
+when_to_transfer_output = ON_EXIT
+queue
